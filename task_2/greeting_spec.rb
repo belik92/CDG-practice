@@ -4,21 +4,7 @@
 #  *Привет, {имя} {фамилия}. Самое время заняться делом!*
 
 require 'rspec'
-def greeting
-  print "Hello, input your first name >>"
-    first_name = gets.chomp.to_s
-  print "input your second name >>"
-    second_name = gets.chomp.to_s
-  print "input your age >>"
-    age = gets.to_i
-  if age > 18
-    "Hello, #{first_name} #{second_name}. It's right time to start your work in IT"
-  else
-    "Hello, #{first_name} #{second_name}. You are under 18 years old, but never early to start learning ruby."
-  end
-end
-puts greeting
-
+require './greeting.rb'
 # Проверка программы
 RSpec.describe "greeting_students" do
   it "#greeting under 18" do
