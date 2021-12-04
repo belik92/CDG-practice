@@ -15,7 +15,7 @@ def pokemon
     name = gets.chomp.to_s
     print "input pokemons color(put end to exit) >> "
     color = gets.chomp.to_s
-    pok_sample = {:name => name, color: color} 
+    pok_sample = {:name name, color: color} 
     pok_arr.push(pok_sample)
     break if (name || color) == "end"
     end
