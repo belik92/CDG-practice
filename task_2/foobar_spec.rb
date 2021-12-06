@@ -12,10 +12,12 @@ RSpec.describe "defff" do
     allow_any_instance_of(Kernel).to receive(:gets).and_return(20, 10)
     expect(foobar).to eq(10)
   end
+  
   it "#first_number" do
     allow_any_instance_of(Kernel).to receive(:gets).and_return(30, 20)
     expect(foobar).to eq(30)
   end
+  
   it "#summ" do
     allow_any_instance_of(Kernel).to receive(:gets).and_return(10, 10)
     expect(foobar).to eq(20)

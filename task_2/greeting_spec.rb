@@ -11,6 +11,7 @@ RSpec.describe "greeting_students" do
     allow_any_instance_of(Kernel).to receive(:gets).and_return("Sam", "Ostin", 16)
     expect(greeting).to eq("Hello, Sam Ostin. You are under 18 years old, but never early to start learning ruby.")
   end
+  
   it "#greeting more 18" do
     allow_any_instance_of(Kernel).to receive(:gets).and_return("Sam", "Ostin", 20)
     expect(greeting).to eq("Hello, Sam Ostin. It's right time to start your work in IT")
