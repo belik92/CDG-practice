@@ -21,7 +21,7 @@ def pokemon
     pok_sample = {name: name, color: color} 
     pok_arr.push(pok_sample)
     end
-    pokemon = pok_arr  
+  pokemon = pok_arr  
   else pokemon = "You have not any pokemons"  
   end
 end
