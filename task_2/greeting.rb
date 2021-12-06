@@ -3,7 +3,6 @@
 #  *Привет, {имя} {фамилия}. Тебе меньше 18 лет, но начать учиться программировать никогда не рано*
 #  *Привет, {имя} {фамилия}. Самое время заняться делом!*
 
-require 'rspec'
 def greeting
   print "Hello, input your first name >>"
     first_name = gets.chomp.to_s
